@@ -16,22 +16,22 @@ const Card = Styled.div`
     color: black;
 
 `;
-const CardAction = Styled.div`
-    width: 140px;
-    text-align:center;
-    margin-top:1rem;
-    p{
-        text-transform: capitalize;
-        font-weight: 700;
-        margin:0;
+// const CardAction = Styled.div`
+//     width: 140px;
+//     text-align:center;
+//     margin-top:1rem;
+//     p{
+//         text-transform: capitalize;
+//         font-weight: 700;
+//         margin:0;
         
 
-    }
-    display:flex;
-    flex-direction:column;
-    align-items:space-between;
+//     }
+//     display:flex;
+//     flex-direction:column;
+//     align-items:space-between;
 
-`;
+// `;
 
 // const IconContainer = Styled.div`
 //     display:flex;
