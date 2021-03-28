@@ -1,7 +1,6 @@
 import React from "react";
 import Styled from "styled-components";
 import ProductCardSide from "../Products/ProductCardSide";
-import Grid from "@material-ui/core/Grid";
 import MainProduct from "./MainProduct";
 
 const Container = Styled.div`
@@ -11,12 +10,12 @@ const Container = Styled.div`
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     margin-bottom: 3rem;
 `;
-const Body = Styled.div`
-    width:100%;
-    background:#fff;
+// const Body = Styled.div`
+//     width:100%;
+//     background:#fff;
 
 
-`;
+// `;
 
 const Title = Styled.div`
      width: 100%;

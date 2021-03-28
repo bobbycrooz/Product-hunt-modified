@@ -33,23 +33,23 @@ const CardAction = Styled.div`
 
 `;
 
-const IconContainer = Styled.div`
-    display:flex;
-    margin-top: 1rem;
-    justify-content:space-between;
-`;
-const CardDetails = Styled.div`
-    margin-top: 1rem;
-    text-align:center;
-    width:298px;
-    height:120;
+// const IconContainer = Styled.div`
+//     display:flex;
+//     margin-top: 1rem;
+//     justify-content:space-between;
+// `;
+// const CardDetails = Styled.div`
+//     margin-top: 1rem;
+//     text-align:center;
+//     width:298px;
+//     height:120;
     
-    line-height: 1.4rem;
-    p{
-        color: black
-        margin:0;
-    }
-`
+//     line-height: 1.4rem;
+//     p{
+//         color: black
+//         margin:0;
+//     }
+// `
 
 const ProductCardSide = () => {
     return (

@@ -4,7 +4,6 @@ import Homehead from './Main/Home/Homehead'
 import HomePostCard from './Main/Home/HomePostCard'
 import Horizontal from './Main/Horizontal'
 import BlogPost from './Main/Home/HomeBlogPost'
-import Footer from './Footer'
 
 
 const MainBar = styled.div`

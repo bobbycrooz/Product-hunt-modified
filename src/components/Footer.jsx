@@ -23,9 +23,9 @@ const Logo = Styled.p`
 const Footer = () => {
     return (
         <Container>
-            <logo>
+            <Logo>
                 showCase 2021
-            </logo>
+            </Logo>
         </Container>
     )
 }

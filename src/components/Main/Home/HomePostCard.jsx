@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
 import ProductsCard from '../../Products/ProductsCard'
