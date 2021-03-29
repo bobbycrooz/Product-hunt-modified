@@ -14,7 +14,7 @@ const Logo = Styled.span`
 
 
 const Hr = Styled.hr`
-  margin-left: 10rem;
+  margin-left: 8rem;
   margin-top: 2rem;
   width:800px;
 `

@@ -34,6 +34,7 @@ const ContainerDetailsTitle = Styled.div`
     padding: 0;
     text-align:left;
     p{
+        color:${({theme}) => theme.textColor };
         font-size:18px;
         font-weight:600px;
     padding: 0;
@@ -47,6 +48,7 @@ const ContainerDetailsDate = Styled.div`
     margin-top:0.5rem;
      text-align:left;
     p{
+        color:${({theme}) => theme.textColor };
         font-size:12px;
         font-weight:500px;
     padding: 0;

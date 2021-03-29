@@ -10,7 +10,12 @@ const MainBar = styled.div`
     position: absolute;
     left:0;
     top: 4.8rem;
-    right:30rem;
+    right:25rem;
+    /* width:70%; */
+    /* border:1px solid red; */
+    /* display:flex;
+    flex-direction:column;
+    align-items: center; */
     
 
 `

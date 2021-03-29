@@ -4,8 +4,9 @@ import Grid from '@material-ui/core/Grid'
 import ProductsCard from '../../Products/ProductsCard'
 
 const PostCardContainer = Styled.div`
+    
     width: 800px;
-    margin-left: 10rem;
+    margin-left: 8rem;
     margin-top: 1rem;
     /* margin-bottom: 1rem;  */
     
@@ -21,7 +22,7 @@ const PostCardTitle = Styled.div`
     p{
         font-size: 20px;
         font-weight: 700;
-        color: rgba(11, 7, 29, 0.897);
+        color: ${({theme}) => theme.textColor };
 
     }
     
@@ -29,7 +30,7 @@ const PostCardTitle = Styled.div`
 
 const PostCardBody = Styled.div`
     width: 100%;
-    color: black;
+    color: ${({theme}) => theme.textColor };
     background: #fff;
     padding:1rem;
 `

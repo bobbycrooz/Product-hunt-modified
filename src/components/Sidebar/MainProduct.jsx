@@ -4,12 +4,13 @@ import Styled from "styled-components";
 const MainCard = Styled.div`
     padding:1rem;
     background:#fff;
-    border-bottom: black;
+    border-bottom: ${({theme}) => theme.textColor };
     display:flex;
     flex-direction:column;
     align-items:center;
     margin-bottom:2px;
-    color: #000000;
+        color: ${({theme}) => theme.textColor };
+
     
 `;
 const Mainvideo = Styled.div`
@@ -38,7 +39,45 @@ const CardAction = Styled.div`
 const IconContainer = Styled.div`
     display:flex;
     margin-top: 1rem;
-    justify-content:space-between;    
+    justify-content:space-between; 
+    div{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            /* line-height: 1.4rem; */
+                p{
+                    margin-left:7px;
+            font-weight: 700;
+
+                    font-size:14px;
+                }
+                span{
+                    width:30px;
+                    height:30px;
+                    cursor:pointer;
+                    background:#ffff;
+                    display: flex;
+                    align-items: center;
+                    justify-content:center;
+                    border-radius:8px;
+                    padding:0;
+                  box-shadow: rgba(43, 38, 71, 0.3) 0px 9px 38px,
+                                    rgba(38, 34, 56, 0.22) 0px 10px 12px;
+                    /* box-shadow: black 0 10px 15px -10px ; */
+                     /* rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+                    i{
+                    /* padding-top:10px; */
+                    
+                    color:orange;
+                    display: flex;
+                    align-items: center;
+                    justify-content:center;
+                }
+}
+
+
+            /* font-weight: 500; */
+        }   
 
 
 `;
@@ -62,8 +101,19 @@ const MainProduct = () => {
       <CardAction>
         <p>product name</p>
         <IconContainer>
-          <span>icon</span>
-          <span>icon</span>
+          <div>
+                <span>
+                  <i style={{fontSize:'30px',paddingTop:'10px'}}class="fas fa-sort-up"></i>
+                </span>
+                <p>231</p>
+              </div>
+          <div>
+                <span>
+                 <i class="fas fa-comment-alt"></i>
+                </span>
+
+                <p>231</p>
+              </div>
         </IconContainer>
       </CardAction>
 

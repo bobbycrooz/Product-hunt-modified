@@ -5,16 +5,19 @@ import Modal from './components/Modal'
 import SideBar from './container/Sidebar'
 import Footer from './components/Footer'
 
+
 const Producthunt = () => {
     return (
         <>
-    <Modal/>
+            <Modal/>
 
             <Navbar  />
-            <>
+        <>
             <Main />  
             <SideBar />
-            </>
+        </>
+            
+            
             <Footer />
         </>
     )

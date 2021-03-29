@@ -4,11 +4,17 @@ import ProductCardSide from "../Products/ProductCardSide";
 import MainProduct from "./MainProduct";
 
 const Container = Styled.div`
+    background: transparent;
+
     width: 300px;
     display: flex;
     flex-direction:column;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     margin-bottom: 3rem;
+    margin-left:1rem;
+
+    /* border:1px solid red; */
+
 `;
 // const Body = Styled.div`
 //     width:100%;
@@ -22,12 +28,14 @@ const Title = Styled.div`
     background: transparent;
     display: flex;
     align-items: center;
+    margin-left:1rem;
+
     justify-content: flex-start;
     padding:2px;
     p{
         font-size: 18px;
         font-weight: 700;
-        color: black;
+        color: ${({theme}) => theme.textColor };
 
     }
     

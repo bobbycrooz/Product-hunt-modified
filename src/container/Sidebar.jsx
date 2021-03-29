@@ -8,7 +8,9 @@ const SideBar = styled.div`
     position: absolute;
     right: 0;
     top: 4.8rem;
-    width: 30rem;
+    width: 25rem;
+    background: transparent;
+    padding-left:1rem;
 `
 
 const Sidebar = () => {

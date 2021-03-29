@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid'
 
 const Container = Styled.div`
     width: 800px;
-    margin-left: 10rem;
+    margin-left: 8rem;
     margin-top: 1rem;
 
 `
@@ -21,7 +21,7 @@ const ContainerTitle = Styled.div`
     p{
         font-size: 20px;
         font-weight: 700;
-        color: rgba(11, 7, 29, 0.897);
+        color: ${({theme}) => theme.textColor };
 
     }
     
@@ -29,7 +29,7 @@ const ContainerTitle = Styled.div`
 
 const ContainerBody = Styled.div`
     width: 100%;
-    color: black;
+    color: ${({theme}) => theme.textColor };
     background: #fff;
     padding:0;
     display: flex;
@@ -59,11 +59,6 @@ const HomeBlogPost = () => {
 
 
 
-                {/* <BlogCard/>
-                <BlogCard/>
-                <BlogCard/>
-                <BlogCard/>
-                <BlogCard/> */}
             </ContainerBody>
             
         </Container>

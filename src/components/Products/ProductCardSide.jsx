@@ -8,12 +8,15 @@ const Cardcontainer = Styled.div`
     justify-content: center;
     align-items:center;
     margin-bottom:3px;
+
+    
 `;
 const Card = Styled.div`
     width:298px;
     background:#b3b3b3;
     height:108px;
-    color: black;
+    
+    color: ${({theme}) => theme.textColor };
 
 `;
 // const CardAction = Styled.div`

@@ -5,6 +5,8 @@ import styled from 'styled-components'
 const Nav = styled.div`
     width: 100%;
     height: 4.5rem;
+    opacity:1;
+    visibility:visible;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,9 +14,15 @@ const Nav = styled.div`
     position: fixed;
     z-index: 1000;
     top:0;
-    background-color: ${({theme}) => theme.primary } ;
-    color:#08131F;
+    color: ${({theme}) => theme.textColor };
+    background-color: #fff ;
+   
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -5px;
+
+    &.active{
+        opacity:0;
+        visibility:hidden;
+    }
 
 `
 
@@ -50,7 +58,8 @@ const NavUl = styled.ul`
 const NavLi = styled.a`
     list-style: none;
     text-decoration:none;
-    color:black;
+        color: ${({theme}) => theme.textColor };
+
     height:100%;
     width:100%;
     display:flex;
@@ -83,9 +92,16 @@ function ShowModal(){
     }
 
 
+
+
 const Navbar = () => {
+        const navbar = document.getElementById('navbar');
+        if(window.scrollY > 100){
+            navbar.classList.toggle('active')
+        }
+
     return (
-        <Nav>
+        <Nav id='navbar'>
             <Logo>ShowCase</Logo>
             <NavContainer>
                 <NavUl className='nav'>

@@ -7,9 +7,8 @@ const Container = Styled.div`
     height: 9vh;
     border-top:1px solid rgba(63, 63, 63, 0.466);
     padding: 2rem;
-    color: black;
-    position:absolute;
-    bottom:0;
+    color: ${({theme}) => theme.textColor };
+    
     display: flex;
     justify-content:center;
     align-items:center;
