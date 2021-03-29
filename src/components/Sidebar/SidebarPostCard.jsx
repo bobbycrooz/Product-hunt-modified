@@ -29,7 +29,10 @@ const Title = Styled.div`
     display: flex;
     align-items: center;
     margin-left:1rem;
-
+    font-size: 18px;
+        letter-spacing:4px;
+            font-family: 'Mulish', sans-serif;
+            margin-bottom:1rem;
     justify-content: flex-start;
     padding:2px;
     p{

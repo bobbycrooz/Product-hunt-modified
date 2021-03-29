@@ -78,17 +78,21 @@ const NavUl = styled.ul`
     display: flex;
     justify-content:space-between;
     align-items: center;
-    width: 200px;
+    width: 300px;
     padding: 0;
      height:100%;
 `
 
 const NavLi = styled.a`
-    list-style: none;
+    font-weight: 500;
+    font-size: 18px;
     text-decoration:none;
     color: ${({theme}) => theme.textColor };
+    &:hover{
+        border-bottom:3px solid ${({theme}) => theme.secondary };
+    }
     &:visited{
-    color: ${({theme}) => theme.secondary };
+    color: black;
         
     }
     height:100%;
@@ -137,9 +141,15 @@ const Navbar = () => {
             </LogoContainer>
             <NavContainer>
                 <NavUl className='nav'>
+
+                    <NavLi href='https://www.figma.com/file/zsKEwA9JqWXDaUuvcCECuB?node-id=90:2574'>
+                        Figma
+                    </NavLi>
+
                     <NavLi href='#blog'>
                         Blog
                     </NavLi>
+                    
                     <NavLi  onClick={ShowModal}>
                         Sign in
                     </NavLi>

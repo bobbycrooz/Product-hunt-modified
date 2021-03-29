@@ -11,6 +11,18 @@ const SideBar = styled.div`
     width: 25rem;
     background: transparent;
     padding-left:1rem;
+    @media only screen and (max-width:800px){
+        &{
+            width: 20rem;
+            
+        }
+    }
+    @media only screen and (max-width:700px){
+        &{
+            width: 19rem;
+            
+        }
+    }
 `
 
 const Sidebar = () => {
@@ -21,5 +33,9 @@ const Sidebar = () => {
         </SideBar>
     )
 }
+
+
+
+
 
 export default Sidebar

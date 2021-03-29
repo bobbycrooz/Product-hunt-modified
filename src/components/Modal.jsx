@@ -26,7 +26,6 @@ const ModalCard = Styled.div`
 
 `
 
-
 function hideModal(){
     const modal = document.getElementById('modal')
         // modal.style.visibility = 'visible';
@@ -34,10 +33,13 @@ function hideModal(){
     }
 
 const Modal = () => {
+
+
     return (
         <ModalContainer id='modal'>
             <ModalCard>
                 login here
+               
                 <button onClick={hideModal}>
                     cancle
                 </button>

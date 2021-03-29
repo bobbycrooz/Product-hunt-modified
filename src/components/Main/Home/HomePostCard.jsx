@@ -79,7 +79,7 @@ const Navli = Styled.a`
 `
 
 
-const arr = [1,1,1,1,1,1,1,1,1,1,1,1]
+const arr = [1,1,1,1,1,1,]
 
 const CategoriesArr = ['Healthcare','Agriculture','Transportion','E-commerce','Fintech', 'Gaming']
 const PostCardNav = () => {
