@@ -19,7 +19,10 @@ const ContainerTitle = Styled.div`
     justify-content: flex-start;
     padding:2px;
     p{
-        font-size: 20px;
+        font-size: 18px;
+        letter-spacing:4px;
+            font-family: 'Mulish', sans-serif;
+
         font-weight: 700;
         color: ${({theme}) => theme.textColor };
 

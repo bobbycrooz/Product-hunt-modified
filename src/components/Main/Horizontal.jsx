@@ -1,15 +1,14 @@
 import React from "react";
 import Styled from "styled-components";
+import logo from '../../assets/logo.png'
 
-const Logo = Styled.span`
+const Logo = Styled.img`
   position: absolute;
+  width:40px;
+  height:40px;
   margin-top:1.3rem;
   left: 55%;
   transform: translateX(-40%);
-  border: 1px solid;
-  background: black;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 `;
 
 
@@ -17,6 +16,7 @@ const Hr = Styled.hr`
   margin-left: 8rem;
   margin-top: 2rem;
   width:800px;
+  border-color:${({theme}) => theme.horizontal};
 `
 
 
@@ -25,7 +25,7 @@ const Hr = Styled.hr`
 const Horizontal = ({click}) => {
   return (
     <>
-      <Logo onClick={click}>icon</Logo>
+      <Logo onClick={click} src={logo}></Logo>
       <Hr/>
     </>
   );

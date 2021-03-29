@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import logo from '../../assets/logo1.png'
+
 
 
 const Nav = styled.div`
@@ -26,14 +28,28 @@ const Nav = styled.div`
 
 `
 
-const Logo = styled.div`
-    padding: 1rem ;
-    height: 100%;
+const LogoText = styled.div`
+    /* padding: 1rem ;
+    height: 100%; */
     display:flex;
     justify-content: center;
     align-items:center;
     font-size: 29px;
     font-weight: 700;
+   
+
+
+
+`
+const LogoContainer = styled.a`
+    padding: 1rem ;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-left:20px;
+    
+    
 
 
 `
@@ -45,6 +61,18 @@ const NavContainer = styled.div`
     align-items:center;
 
 `
+const Logo = styled.img`
+  /* position: absolute;
+
+  left:20px;
+  top:9px; */
+  width:44px;
+  height:44px;
+  /* border:1px solid ; */
+
+  
+
+`;
 
 const NavUl = styled.ul`
     display: flex;
@@ -58,17 +86,18 @@ const NavUl = styled.ul`
 const NavLi = styled.a`
     list-style: none;
     text-decoration:none;
-        color: ${({theme}) => theme.textColor };
-
+    color: ${({theme}) => theme.textColor };
+    &:visited{
+    color: ${({theme}) => theme.secondary };
+        
+    }
     height:100%;
     width:100%;
     display:flex;
     justify-content: center;
     align-items:center;
     cursor:pointer;
-    &:hover{
-         background-color: palevioletred;
-     }
+    
 `
 
 const SubscribeBtn = styled.button`
@@ -102,7 +131,10 @@ const Navbar = () => {
 
     return (
         <Nav id='navbar'>
-            <Logo>ShowCase</Logo>
+            <LogoContainer>
+                <Logo src={logo}></Logo>
+                <LogoText>ShowCase</LogoText>
+            </LogoContainer>
             <NavContainer>
                 <NavUl className='nav'>
                     <NavLi href='#blog'>

@@ -7,7 +7,7 @@ const PostCardContainer = Styled.div`
     
     width: 800px;
     margin-left: 8rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
     /* margin-bottom: 1rem;  */
     
 
@@ -19,8 +19,11 @@ const PostCardTitle = Styled.div`
     align-items: center;
     justify-content: flex-start;
     padding:2px;
+    margin:1rem 0;
     p{
-        font-size: 20px;
+        font-size: 18px;
+        letter-spacing:4px;
+            font-family: 'Mulish', sans-serif;
         font-weight: 700;
         color: ${({theme}) => theme.textColor };
 
@@ -40,7 +43,7 @@ const Nav = Styled.div`
     align-items:center;
     padding:0;
     position: relative;
-    margin:;
+    margin:1rem 0;
 
 `
 
@@ -52,14 +55,14 @@ const NavUl = Styled.ul`
      overflow-x: ${props => props.scroll ? 'scroll' : 'hidden'};
 `
 
-const Navli = Styled.li`
+const Navli = Styled.a`
     list-style:none;
     position: relative;
     font-weight:600;
     height:100%;
     padding:0.5rem 1rem;
     margin-left:2px;
-   
+   cursor:pointer;
 
     &:hover{
         color: blue;

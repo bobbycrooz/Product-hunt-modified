@@ -1,6 +1,8 @@
 export const defaultTheme = {
-    primary: '#2D2D2D',
+    primary: '#2d2d2dd3',
     secondary: '#FF7C1F',
-    textColor: '#2D2D2D',
+    titleColor: '#353535ee',
+    numberColor: '#08131ff1',
+    horizontal: '#08131f3b'
     
 }

@@ -9,7 +9,6 @@ function App() {
     <>
     <ThemeProvider theme={defaultTheme}>
        <GlobalStyles/>
-
        <ProductHunt/>
     </ThemeProvider>
    

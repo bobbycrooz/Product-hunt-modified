@@ -6,7 +6,7 @@ import img1 from '../../assets/slideimage1.png'
 
 const Product = Styled.div`
     background:#ffffff;
-    height: 180px;
+    height: 190px;
     width: 100%;
         display:flex;
     flex-direction:column;
@@ -16,7 +16,7 @@ const Product = Styled.div`
 `;
 
 const ProductMedia = Styled.div`
-    height:60%;
+    height:50%;
     width: 100%;
     display:flex;
     justify-content:space-between;
@@ -25,7 +25,7 @@ const ProductMedia = Styled.div`
 const ProductImage = Styled.img`
         width:25%;
         height:100%;
-
+        border-radius:5px;
 
 `;
 const ProductInfo = Styled.div`
@@ -37,6 +37,8 @@ const ProductInfo = Styled.div`
 const Productname = Styled.div`
         width:100%;
         p{
+          color:${({theme}) => theme.titleColor };
+
             font-size:18px;
             font-weight: 700;
             font-family: 'Mulish', sans-serif;
@@ -44,15 +46,16 @@ const Productname = Styled.div`
         }
 `;
 const Dot = Styled.div`
-        width:8px;
-        height:8px;
+        width:5px;
+        height:5px;
         border-radius:50%;
-        background:#${({theme}) => theme.textColor };
+        background:${({theme}) => theme.titleColor };
         
 `;
 const Productuser = Styled.div`
         width:100%;
         margin-top:5px;
+       
         p{
             font-size:15px;
             font-weight: 500;
@@ -60,6 +63,8 @@ const Productuser = Styled.div`
             align-items: center;
             
             p{
+            font-size:12px;
+
                 margin-left:0.4rem;
             }
         }
@@ -80,9 +85,10 @@ const Producticon = Styled.div`
             /* line-height: 1.4rem; */
                 p{
                     margin-left:7px;
-            font-weight: 700;
+                    font-weight: 700;
+                    font-size:12px;
+                              color:${({theme}) => theme.numberColor };
 
-                    font-size:14px;
                 }
                 span{
                     width:30px;
@@ -94,12 +100,9 @@ const Producticon = Styled.div`
                     justify-content:center;
                     border-radius:8px;
                     padding:0;
-                  box-shadow: rgba(43, 38, 71, 0.3) 0px 9px 38px;
-                    /* box-shadow: black 0 10px 15px -10px ; */
-                     /* rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+                    box-shadow: rgba(43, 38, 71, 0.3) 0px 9px 38px;
+                  
                     i{
-                    /* padding-top:10px; */
-                    
                     color:${({theme}) => theme.secondary };
                     display: flex;
                     align-items: center;
@@ -108,21 +111,23 @@ const Producticon = Styled.div`
 }
 
 
-            /* font-weight: 500; */
         }
 
 
 `;
 
 const ProductDetails = Styled.div`
+        line-height:30px;
    
     background:transparent;
-    height: 50%;
+    height: 60%;
     width: 100%;
     padding: 0.5rem 0;
 
-    p{
-        font-size:15px;
+    p{  
+          color:${({theme}) => theme.titleColor };
+
+        font-size:14px;
         font-weight:500;
 
     }
