@@ -44,7 +44,7 @@ function App() {
     <ThemeProvider theme={defaultTheme}>
        <GlobalStyles/>
        {
-         width <= 1300 ? <MobileView/> : <ProductHunt/> 
+         width <= 900 ? <MobileView/> : <ProductHunt/> 
        }
        
     </ThemeProvider>
